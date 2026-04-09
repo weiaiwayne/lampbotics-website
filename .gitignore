@@ -1,0 +1,17 @@
+# Server configs
+nginx.conf
+nginx-test.conf
+deploy.sh
+
+# Data files
+data/
+
+# IDE and system files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Claude Code
+.claude/

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page not found - LampBotics">
+
+  <title>404 - Page Not Found - LampBotics</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo">
+        <span class="nav__logo-text">LampBotics</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__links">
+        <li><a href="/" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="manifesto.html" class="nav__link">Manifesto</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Error Page -->
+  <main class="error-page">
+    <div class="container">
+      <div class="error-page__code">404</div>
+      <h1 class="error-page__title">Page Not Found</h1>
+      <p class="error-page__description">
+        The agents searched everywhere, but this page doesn't exist.<br>
+        Perhaps it was never built, or perhaps it was retracted.
+      </p>
+      <div class="flex flex--center gap-md" style="flex-wrap: wrap;">
+        <a href="/" class="btn btn--primary">Return Home</a>
+        <a href="contact.html" class="btn btn--secondary">Contact Us</a>
+      </div>
+      <p class="text-mono text-muted mt-xl" style="font-size: 0.85rem;">
+        // Error logged. No hallucinations detected.
+      </p>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

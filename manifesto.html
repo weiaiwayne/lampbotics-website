@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The LampBotics Manifesto - CommDAAF principles for responsible AI-driven research and product development.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Manifesto - LampBotics">
+  <meta property="og:description" content="CommDAAF principles for responsible AI-driven research and product development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.lampbotics.com/manifesto.html">
+
+  <title>Manifesto - LampBotics</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo">
+        <span class="nav__logo-text">LampBotics</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__links">
+        <li><a href="/" class="nav__link">Home</a></li>
+        <li><a href="services.html" class="nav__link">Work With Us</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="manifesto.html" class="nav__link nav__link--active">Manifesto</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="product-hero">
+    <div class="container">
+      <div class="text-center">
+        <span class="product-hero__badge">Our Principles</span>
+        <h1 class="product-hero__title">The LampBotics Manifesto</h1>
+        <p class="product-hero__description" style="max-width: 700px; margin: 0 auto;">
+          A framework for building AI systems that are accountable, transparent, and genuinely useful.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto Content -->
+  <section class="section">
+    <div class="container">
+      <div class="manifesto-content" data-animate>
+
+        <h2>Human Stewardship</h2>
+        <p>
+          AI is co-intelligence, not replacement. The role of artificial intelligence at LampBotics is to extend human capability, not to substitute human judgment. Agents handle execution. Humans retain control.
+        </p>
+        <p>
+          This is not a philosophical hedge or a liability disclaimer. It is how we actually operate. Every system we build has clear points where human oversight is required. Every decision of consequence has a human in the loop.
+        </p>
+
+        <h2>Multi-Model Accountability</h2>
+        <p>
+          Single-model AI systems are structurally flawed. They carry the biases, gaps, and hallucination patterns of their training data and architecture. A system that relies on one model's judgment is a system that has outsourced truth to a black box.
+        </p>
+        <p>
+          LampBotics uses the <a href="https://github.com/weiaiwayne/commDAAF" target="_blank" rel="noopener" class="text-accent">CommDAAF</a> framework. In practice, this means:
+        </p>
+        <ul>
+          <li><strong>No single model has authority.</strong> Claims must survive cross-validation.</li>
+          <li><strong>Different models catch different mistakes.</strong> We use models with different architectures specifically because they fail differently.</li>
+          <li><strong>Disagreement is surfaced, not suppressed.</strong> When models disagree, we document the disagreement and investigate why.</li>
+          <li><strong>Adversarial review is built in.</strong> Models are instructed to challenge each other's outputs.</li>
+          <li><strong>Accumulative skill acquisition.</strong> Agents develop capabilities through conducting and peer-reviewing real-world research.</li>
+        </ul>
+
+        <h2>The Attention Shift</h2>
+        <p>
+          AI systems now decide what information surfaces and what gets buried. This changes everything about how decisions get made — in markets, in organizations, in daily life.
+        </p>
+        <p>
+          Content curation used to be visible: editors, journalists, influencers with names and faces. Now it's algorithmic, invisible, and constantly adapting. Understanding this shift is the first step to navigating it.
+        </p>
+        <p>
+          We build tools for people who'd rather understand these systems than be shaped by them.
+        </p>
+
+        <h2>Build to Understand</h2>
+        <p>
+          The fastest way to understand AI is to build with it. Not theory-first, but hands-on: make something, break it, learn why it broke, make it better.
+        </p>
+        <p>
+          Some foundational knowledge matters — you need enough intuition to know when something's off. But that intuition comes from doing, not from reading about doing.
+        </p>
+        <p>
+          The goal is to move from uncertainty to confidence. Not by pretending AI is simple, but by getting comfortable with complexity through direct experience.
+        </p>
+
+        <h2>Research to Product</h2>
+        <p>
+          Academic research and practical products have traditionally operated on different timescales and with different incentives. Research optimizes for rigor and novelty. Products optimize for utility and speed.
+        </p>
+        <p>
+          We reject this false dichotomy. The best research should be usable. The best products should be rigorous. Our goal is to collapse the distance between insight and implementation while maintaining methodological integrity.
+        </p>
+
+        <h3>What This Looks Like</h3>
+        <ul>
+          <li>Research findings are operationalized into tools within weeks, not years.</li>
+          <li>Tools are built with the same documentation and validation standards as peer-reviewed research.</li>
+          <li>Failures and limitations are published, not hidden.</li>
+        </ul>
+
+        <h2>Autonomous Within Guardrails</h2>
+        <p>
+          "AI-assisted" is a phrase that means almost nothing. Every software company uses AI assistance. LampBotics operates differently: agents execute autonomously within validated boundaries, while humans set direction and make judgment calls.
+        </p>
+
+        <h3>What This Means</h3>
+        <ul>
+          <li><strong>Agents execute, humans steer.</strong> Agents handle the heavy lifting. Humans define what matters.</li>
+          <li><strong>Autonomy is earned.</strong> Agents gain latitude as they demonstrate reliability through validated outputs.</li>
+          <li><strong>Guardrails are explicit.</strong> Clear boundaries on what agents can and cannot do without human review.</li>
+          <li><strong>Everything is logged.</strong> Agent decisions are documented because trust requires transparency.</li>
+        </ul>
+
+        <h2>Transparent Failures</h2>
+        <p>
+          Most AI companies hide their mistakes. We publish ours. AgentAcademy has issued retractions when agent analyses were flawed. This is not a weakness. It is the only way to build systems worthy of trust.
+        </p>
+        <p>
+          Every LampBotics output is:
+        </p>
+        <ul>
+          <li><strong>Traceable.</strong> You can see how we got there.</li>
+          <li><strong>Reviewable.</strong> The reasoning is inspectable.</li>
+          <li><strong>Correctable.</strong> When we're wrong, we say so publicly.</li>
+        </ul>
+
+        <h2>The FaithTech Principle</h2>
+        <p>
+          Not everything should move fast. Some of our work, particularly LampPath and FaithTime, operates on a different principle: technology in service of meaning, not engagement.
+        </p>
+        <p>
+          These projects represent the contemplative side of LampBotics. AI that respects pace. Interfaces that don't demand attention. Tools that serve reflection rather than reaction.
+        </p>
+
+        <h2>Honest About Limits</h2>
+        <p>
+          AI might level the playing field. It might also amplify whoever's already winning. We're optimistic but not naive — and we'd rather test our assumptions than defend them.
+        </p>
+        <p>
+          The real risk isn't that AI won't work. It's that people will trust outputs they don't understand from systems they can't inspect. We stay in the loop because that's where the judgment lives.
+        </p>
+
+        <h2>What We Will Not Do</h2>
+        <ul>
+          <li>Build systems that obscure their reasoning.</li>
+          <li>Trust any single model's judgment on questions of consequence.</li>
+          <li>Ship products that prioritize engagement over utility.</li>
+          <li>Hide failures or pretend our systems are infallible.</li>
+          <li>Replace human judgment where human judgment is required.</li>
+          <li>Surrender intellectual labor without understanding the consequences.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+          This manifesto is not a promise. It is a description of how we work today and a commitment to how we will continue to work. We invite scrutiny. We expect to be held to these standards.
+        </p>
+        <p class="text-mono text-muted mt-xl" style="font-size: 0.9rem;">
+          // Designed by Agents, Stewarded by Humans.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="newsletter" data-animate>
+        <h2 class="newsletter__title">See These Principles in Action</h2>
+        <p class="newsletter__description">
+          Explore our products and research to see how these principles manifest in practice.
+        </p>
+        <div class="flex flex--center gap-md" style="flex-wrap: wrap;">
+          <a href="https://agentacademy.lampbotics.com/" class="btn btn--primary" target="_blank" rel="noopener">
+            Visit AgentAcademy
+          </a>
+          <a href="about.html" class="btn btn--secondary">
+            Learn About Our Team
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">
+            <span>LampBotics</span>
+          </a>
+          <p class="footer__tagline">
+            "Designed by Agents, Stewarded by Humans."
+          </p>
+        </div>
+
+        <div class="footer__section">
+          <h4>Products</h4>
+          <nav class="footer__links">
+            <a href="https://agentacademy.lampbotics.com/" class="footer__link" target="_blank" rel="noopener">AgentAcademy</a>
+            <a href="https://vibe-infoveil.lampbotics.com/trading-floor" class="footer__link" target="_blank" rel="noopener">Vibe-Infoveil</a>
+            <a href="https://path.lampbotics.com/" class="footer__link" target="_blank" rel="noopener">LampPath</a>
+            <a href="https://www.instagram.com/faithtimeaiagents/" class="footer__link" target="_blank" rel="noopener">FaithTime</a>
+          </nav>
+        </div>
+
+        <div class="footer__section">
+          <h4>Company</h4>
+          <nav class="footer__links">
+            <a href="about.html" class="footer__link">About</a>
+            <a href="manifesto.html" class="footer__link">Manifesto</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer__section">
+          <h4>Connect</h4>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/company/lampbotics-ai/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://substack.com/@lampbotics" target="_blank" rel="noopener" aria-label="Substack">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="footer__link mt-md">lampbotics [at] gmail</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2024 LampBotics. Founded by Weiai (Wayne) Xu.
+        </p>
+        <p class="footer__agent-note">
+          // Designed by Agents, Stewarded by Humans.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
