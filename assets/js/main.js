@@ -152,7 +152,18 @@
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    // Create iframe
+    // Check if mobile - use thumbnail fallback for better experience
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Use high-quality YouTube thumbnail as background on mobile
+      container.style.backgroundImage = 'url(https://img.youtube.com/vi/' + videoId + '/maxresdefault.jpg)';
+      container.style.backgroundSize = 'cover';
+      container.style.backgroundPosition = 'center';
+      return;
+    }
+
+    // Create iframe for desktop
     const iframe = document.createElement('iframe');
     iframe.src = 'https://www.youtube.com/embed/' + videoId +
       '?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&playlist=' + videoId +
