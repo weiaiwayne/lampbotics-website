@@ -458,6 +458,38 @@ em { font-style: italic; }
 .footer__bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-top: 2px solid var(--ink); margin-top: 40px; padding-top: 20px; font-size: .85rem; }
 .footer__bottom p { margin: 0; }
 
+
+/* ---------- Showcase (Bible Planet) ---------- */
+.showcase { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start; }
+.showcase figure { margin: 0; }
+.showcase img { width: 100%; border: var(--border); border-radius: 20px; background: var(--paper-deep); }
+.showcase__main img { box-shadow: var(--shadow-lg); }
+.showcase__side { display: grid; gap: 18px; }
+.showcase__side img { box-shadow: var(--shadow); border-radius: 16px; }
+.showcase__side figure:nth-child(1) { transform: rotate(1.5deg); }
+.showcase__side figure:nth-child(2) { transform: rotate(-1.5deg); }
+.showcase__side figure:nth-child(3) { transform: rotate(1deg); }
+.showcase figcaption { font-size: .85rem; font-weight: 750; margin-top: 10px; }
+.showcase__facts { margin-top: 44px; }
+.facts { list-style: none; padding: 0; margin: 0 0 30px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.facts li { background: var(--peach); border: var(--border); border-radius: 20px; padding: 18px; box-shadow: var(--shadow-sm); font-size: .95rem; }
+.facts li:nth-child(2) { background: var(--sky); }
+.facts li:nth-child(3) { background: var(--lavender); }
+.facts li:nth-child(4) { background: var(--mint); }
+.facts strong { display: block; font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; line-height: 1.15; margin-bottom: 6px; }
+.app-card__art--shot { padding: 0; overflow: hidden; }
+.app-card__art--shot img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 1000px) {
+  .showcase { grid-template-columns: 1fr; }
+  .showcase__side { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .showcase__side { grid-template-columns: 1fr 1fr; }
+  .showcase__side figure { transform: none !important; }
+  .facts { grid-template-columns: 1fr; }
+}
+
 /* ---------- Motion ---------- */
 @keyframes slideUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 .will-animate { opacity: 0; }
