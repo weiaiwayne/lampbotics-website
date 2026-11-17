@@ -11,11 +11,30 @@
   // DOM Ready
   // ==========================================
   document.addEventListener('DOMContentLoaded', function() {
+    initVideoPosters();
     initNavigation();
     initScrollEffects();
     initArchiveToggle();
     initAnimations();
   });
+
+  // ==========================================
+  // Click-to-play YouTube posters (no third-party load until asked)
+  // ==========================================
+  function initVideoPosters() {
+    document.querySelectorAll('[data-youtube-poster]').forEach(function(btn) {
+      var id = btn.dataset.youtubePoster;
+      btn.style.backgroundImage = 'url(https://i.ytimg.com/vi/' + id + '/hqdefault.jpg)';
+      btn.addEventListener('click', function() {
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+        iframe.title = btn.getAttribute('aria-label') || 'YouTube video';
+        iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+        iframe.allowFullscreen = true;
+        btn.replaceWith(iframe);
+      });
+    });
+  }
 
   // ==========================================
   // Navigation
@@ -126,6 +145,7 @@
     const observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
+          entry.target.classList.remove('will-animate');
           entry.target.classList.add('animate-slide-up');
           observer.unobserve(entry.target);
         }
@@ -133,15 +153,11 @@
     }, observerOptions);
 
     // Observe elements with data-animate attribute
-    document.querySelectorAll('[data-animate]').forEach(function(el) {
-      el.style.opacity = '0';
-      observer.observe(el);
-    });
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-    // Observe cards
-    document.querySelectorAll('.card').forEach(function(card) {
-      card.style.opacity = '0';
-      observer.observe(card);
+    document.querySelectorAll('[data-animate], .card').forEach(function(el) {
+      el.classList.add('will-animate');
+      observer.observe(el);
     });
   }
 

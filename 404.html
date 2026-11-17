@@ -3,64 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff9ed">
   <meta name="description" content="Page not found - LampBotics">
 
-  <title>404 - Page Not Found - LampBotics</title>
+  <title>404 - Page Not Found | LampBotics AI</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500;1,600&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261117">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Main navigation">
     <div class="container nav__inner">
-      <a href="/" class="nav__logo">
-        <span class="nav__logo-text">LampBotics</span>
-      </a>
-
-      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
+      <a href="/" class="nav__logo"><img src="/assets/images/favicon.svg" width="44" height="44" alt=""><span class="nav__logo-text">LampBotics <small>AI</small></span></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <ul class="nav__links">
-        <li><a href="/" class="nav__link">Home</a></li>
-        <li><a href="about.html" class="nav__link">About</a></li>
-        <li><a href="manifesto.html" class="nav__link">Manifesto</a></li>
-        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li><a href="/#studios" class="nav__link">Shows</a></li>
+        <li><a href="/#apps" class="nav__link">Apps</a></li>
+        <li><a href="/services.html" class="nav__link">For Education</a></li>
+        <li><a href="/about.html" class="nav__link">About</a></li>
+        <li><a href="/manifesto.html" class="nav__link">How We Work</a></li>
+        <li><a href="/contact.html" class="nav__link nav__link--cta">Contact</a></li>
       </ul>
     </div>
   </nav>
+  <!-- /NAV -->
 
   <!-- Error Page -->
-  <main class="error-page">
+  <main class="error-page" id="main">
     <div class="container">
       <div class="error-page__code">404</div>
-      <h1 class="error-page__title">Page Not Found</h1>
+      <h1 class="error-page__title">This page wandered off.</h1>
       <p class="error-page__description">
-        The agents searched everywhere, but this page doesn't exist.<br>
-        Perhaps it was never built, or perhaps it was retracted.
+        Our agents looked everywhere, but this page doesn't exist. It may have moved in our redesign.
       </p>
       <div class="flex flex--center gap-md" style="flex-wrap: wrap;">
         <a href="/" class="btn btn--primary">Return Home</a>
-        <a href="contact.html" class="btn btn--secondary">Contact Us</a>
+        <a href="/contact.html" class="btn btn--secondary">Contact Us</a>
       </div>
-      <p class="text-mono text-muted mt-xl" style="font-size: 0.85rem;">
-        // Error logged. No hallucinations detected.
-      </p>
     </div>
   </main>
 
   <!-- Scripts -->
-  <script src="assets/js/main.js"></script>
+  <script src="/assets/js/main.js?v=20261117"></script>
 </body>
 </html>
